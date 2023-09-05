@@ -64,53 +64,54 @@ The schedule for the different curricula are listed here:
 {% elsif site.curriculum == "dc-ecology" %}
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Nov 29</h3>
     <table class="table table-striped">
       <tr>
 	<td>Before starting</td>
 	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      </tr>	    
+      <tr> <td>14:00</td>  <td>Introductions</td> </tr>
+      <tr> <td>14:20</td>  <td>R vs. Python for Plotting</td> </tr>
+      <tr> <td>14:50</td>  <td> <a href="https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html">Introduction to R</a> </td> </tr>
+      <tr> <td>15:35</td>  <td>Break</td> </tr>
+      <tr> <td>15:45</td>  <td> <a href="https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html">Importing Data and Base R graphics</a> </td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>    
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-        </td>
-      </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
+    <h3>Dec 1</h3>
+    <table class="table table-striped">	    
+      <tr> <td>14:00</td>  <td><a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">Data Wrangling dplyr</a> </td> </tr>
+      <tr> <td>15:00</td>  <td> <a href="https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html">Plotting with ggplot</a> </td> </tr>
+      <tr> <td>15:35</td>  <td>Plot aesthetics</td> </tr>
+      <tr> <td>15:35</td>  <td>Break</td> </tr>
+      <tr> <td>16:00</td>  <td> Combining different plot types</td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>    
+    </table>
+  </div>	
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Dec 6</h3>
+    <table class="table table-striped">   
+      <tr> <td>14:00</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/setup.html">Intro Python</a> </td> </tr>
+      <tr> <td>15:00</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/04-data-types-and-format/index.html">Data Types and Formats</a> </td> </tr>
+      <tr> <td>15:35</td>  <td>Break</td> </tr>
+      <tr> <td>15:45</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/05-merging-data/index.html">Data processing with Pandas</a> </td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>    
     </table>
   </div>
+  <div class="col-md-6">
+    <h3>Dec 8</h3>
+    <table class="table table-striped">	    
+      <tr> <td>14:00</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/06-loops-and-functions/index.html">Workflows</a> </td> </tr>
+      <tr> <td>15:00</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html">Plotting in Python</a> </td> </tr>
+      <tr> <td>15:40</td>  <td>Break</td> </tr>
+      <tr> <td>15:50</td>  <td>Discussion of Plotting Good Practices </td> </tr>
+      <tr> <td>16:50</td>  <td> <a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a> </td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>
+    </table>
+  </div>	
 </div>
 
 {% elsif site.curriculum == "dc-genomics" %}
